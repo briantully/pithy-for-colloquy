@@ -1,2 +1,7 @@
-This is a neat Colloquy theme based on John Alban's Succinct theme.
+This is a neat Colloquy theme based on John Alin's Succinct theme.
+
+It shows images inline. It also plays WAV and MP3 files by embedding 
+them inline (overuse at your own risk!).
+
+It has modified colors and margin/padding to allow for a smaller/narrower window footprint.
 
