@@ -1,0 +1,202 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #4b4b4b;
+	background-color: white;
+	font-family: "Lucida Grande";
+	font-size: .9em;
+	line-height: 1.5em;
+}
+
+input {
+	font-family: "Lucida Grande";
+	font-size: .75em;
+}
+
+a img {
+	border: 0;
+}
+
+img {
+	max-height: 300px;
+	max-width: 485px; /* Golden ratio ~ 485/300 */
+}
+
+a:link {
+	color: #0033cc;
+}
+
+a:visited {
+	color: #0033cc;
+}
+
+a:hover {
+	text-shadow: rgba( 0, 0, 0, .3 ) 0 1px 1px;
+}
+
+a.member {
+	color: #4b4b4b;
+	text-decoration: none;
+}
+
+a.member:hover {
+	text-decoration: underline;
+}
+
+.message:after,
+.event:after {
+	content: ".";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+.message.incoming,
+.event {
+	background: url(images/background-incoming-pithy.png) left top repeat-y;
+}
+
+.message.incoming.highlight {
+	background-color: #ffdddd;
+}
+
+.message.outgoing {
+	background: #e5f0ff url(images/background-outgoing-pithy.png) left top repeat-y;
+}
+
+.message.notice {
+	color: #333;
+	background-color: #eeffee;
+}
+
+.timestamp {
+	float: right;
+	width: 70px;
+	padding: 4px 10px;
+	color: #666;
+	text-align: right;
+}
+
+.message .timestamp {
+	font-size: 0.75em;
+}
+
+.message .sender {
+	float: left;
+	width: 80px; /* 140 - 10 - 10 (padding) */
+	padding: 4px 10px;
+	text-align: right;
+	font-weight: bold;
+	text-shadow: rgba(255, 255, 255, 1) 1px 1px 0;
+	word-wrap: break-word;
+}
+
+.message .sender a {
+	color: #333;
+}
+
+.message + .message .sender {
+	text-indent: -900px;
+	text-align: left;
+}
+
+.message .content,
+.event .content {
+	margin-left: 100px;
+	margin-right: 10px;
+	padding: 4px 10px;
+  white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.message .content .highlight {
+	font-weight: bold;
+	color: #333;
+}
+
+/* message borders */
+.message div {
+	border-top: 1px solid #dcdcdc;
+}
+.message div.sender {
+	border-top: 1px solid transparent;
+}
+.envelope + .envelope .message.outgoing:first-child .sender {
+	border-top: 1px solid #efefef;
+}
+.envelope:last-child,
+.event:last-child {
+	border-bottom: 1px solid #dcdcdc;
+}
+.envelope + .event .content,
+.envelope + .event .timestamp {
+	border-top: 0;
+}
+
+.event {
+	background: #ffffdd url(images/knotes.png) 5px 50% no-repeat !important;
+	border: 1px solid #ffeeaa;
+	color: #cc8800;
+  padding: 5px 0 5px 15px;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	font-style: italic;
+	word-wrap: break-word;
+  white-space: pre-wrap;
+	-khtml-line-break: after-white-space;
+	-khtml-nbsp-mode: space;
+}
+
+.event + .event {
+	margin-top: -4px; /* Un-do previous message's padding. */
+}
+.event + .event div {
+	padding-top: 0;
+}
+
+.event .timestamp {
+	padding-bottom: 0;
+	font-style: normal;
+}
+
+.event,
+.event a,
+.event .timestamp {
+	color: #cc8800;
+}
+
+.event:hover,
+.event:hover a,
+.event:hover .timestamp {
+	color: #4b4b4b;
+}
+
+.event .reason {
+}
+
+.event .member {
+	color: #cc6600;
+  font-weight: bold;
+	text-shadow: rgba(128, 128, 128, 0.5) 1px 1px 2px;
+}
+
+.event .timestamp {
+	color: #cc6600;
+}
+
+.event .content {
+	margin-left: 0px !important;
+}
+
+.event:last-child {
+	border-bottom: 0;
+}
+
+.event + .envelope .message div {
+	border-top: 0 !important;
+}
+
+#consecutiveInsert {
+	display: none;
+}

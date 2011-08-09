@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Pithy Colloquy Chat Style</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.briantully.colloquy.style.pithy</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Pithy</string>
+	<key>CFBundlePackageType</key>
+	<string>coSt</string>
+	<key>JVStyleOptions</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<string>#0033cc</string>
+			<key>description</key>
+			<string>Visited links</string>
+			<key>style</key>
+			<string>a:visited { color: %@; }</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>#333333</string>
+			<key>description</key>
+			<string>Nickname text</string>
+			<key>style</key>
+			<string>.message .sender a { color: %@ !important; }</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>#666666</string>
+			<key>description</key>
+			<string>Timestamp text</string>
+			<key>style</key>
+			<string>.timestamp { color: %@ !important; }</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>#aaaaaa</string>
+			<key>description</key>
+			<string>Event text</string>
+			<key>style</key>
+			<string>.event, .event a, .event .timestamp { color: %@ !important; }</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>#d9e7fb</string>
+			<key>description</key>
+			<string>Highlighted messages</string>
+			<key>style</key>
+			<string>.message.incoming.highlight { background-color: %@ !important; }</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>#eeffee</string>
+			<key>description</key>
+			<string>Notices</string>
+			<key>style</key>
+			<string>.message.notice { background-color: %@ !important; }</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>#ffffff</string>
+			<key>description</key>
+			<string>Actions</string>
+			<key>style</key>
+			<string>.message.action { background-color: %@ !important; }</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>#ffffcc</string>
+			<key>description</key>
+			<string>Your messages</string>
+			<key>style</key>
+			<string>.message.outgoing { background-color: %@ !important; }</string>
+			<key>type</key>
+			<string>color</string>
+		</dict>
+	</array>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2010 Brian Tully</string>
+</dict>
+</plist>
