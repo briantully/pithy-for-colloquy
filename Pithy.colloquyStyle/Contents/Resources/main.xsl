@@ -219,10 +219,10 @@
 				<a href="{@href}" title="{@href}"><img src="{@href}" alt="Loading Image…" onload="scrollToBottom()" onerror="scrollToBottom()" /></a>
 			</xsl:when>
 			<xsl:when test="$extension = '.wav' or $extension = '.WAV'">
-				<a href="{@href}" title="{@href}"><embed src="{@href}" loop="false" hidden="true"></embed><noembed><bgsound src="{@href}"></bgsound></noembed></a>
+				<a href="{@href}" title="{@href}"><xsl:value-of select="@href" /></a><embed src="{@href}" loop="false" hidden="true"></embed><noembed><bgsound src="{@href}"></bgsound></noembed>
 			</xsl:when>
 			<xsl:when test="$extension = '.mp3' or $extension = '.MP3'">
-				<a href="{@href}" title="{@href}"><embed src="{@href}" loop="false" hidden="true"></embed><noembed><bgsound src="{@href}"></bgsound></noembed></a>
+				<a href="{@href}" title="{@href}"><xsl:value-of select="@href" /></a><embed src="{@href}" loop="false" hidden="true"></embed><noembed><bgsound src="{@href}"></bgsound></noembed>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:copy-of select="current()" />
